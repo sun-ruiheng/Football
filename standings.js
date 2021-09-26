@@ -18,7 +18,7 @@ const fetchResponse = async (url) => {
         console.log(e);
     }
 };
-console.log(fetchResponse(baseURL))
+
 const getStandings = async (league) => {
     let urlToFetch = baseURL + league + '/standings';
     let jsonResponse = await fetchResponse(urlToFetch);
