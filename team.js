@@ -145,7 +145,6 @@ const getTeamInfo = async () => {
 //  ALSO EXPLORE FADING IN/OUT OR DRIFTING IN/OUT ON SCROLL, FROM THE SIDES.
 //  ALSO EXPLORE FADING IN/OUT OR DRIFTING IN/OUT ON SCROLL FROM THE SIDES.
 
-
 }
 
 console.log(fetchResponse(baseURL + teamID + '/matches')); //testing stuff... delete later
