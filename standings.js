@@ -1,7 +1,5 @@
-
 const token = '7aa496fb7e9b4a2da942794924e18031';
 const baseURL = 'http://api.football-data.org/v2/competitions/';
-var teamCount = 0;
 
 const fetchResponse = async (url) => {
     try {
@@ -30,7 +28,13 @@ const getStandings = async (league) => {
     for (let i = 0; i < tlength; i++) {
         let row = document.createElement("tr");
         tbody.appendChild(row);
-        // idk if i have to declare row again? by its id? but it has no id?
+
+        // adding click listener to each row for when team is clicked, to bring to team info page
+        let thisTeamID = standings[i].team.id;
+        row.addEventListener('click', function() {
+            getTeam(thisTeamID)
+        });
+
         let td1 = document.createElement('td');
         let data = document.createTextNode(i+1);
         td1.appendChild(data);
@@ -61,11 +65,6 @@ const getStandings = async (league) => {
         td6.appendChild(data6);
         row.appendChild(td6);
         
-        let td7 = document.createElement('td');
-        let data7 = document.createTextNode(standings[i].points);
-        td7.appendChild(data7);
-        row.appendChild(td7);
-        
         let td8 = document.createElement('td');
         let data8 = document.createTextNode(standings[i].goalsFor);
         td8.appendChild(data8);
@@ -80,6 +79,11 @@ const getStandings = async (league) => {
         let data10 = document.createTextNode(standings[i].goalDifference);
         td10.appendChild(data10);
         row.appendChild(td10);
+        
+        let td7 = document.createElement('td');
+        let data7 = document.createTextNode(standings[i].points);
+        td7.appendChild(data7);
+        row.appendChild(td7);
 
     }
     
@@ -89,9 +93,10 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const league = urlParams.get('league');
 getStandings(league);
-// getStandings(league);
-
-// ASSIGNING VAR TO DOMS
 
 
 // ONCLICKS
+const href = './team.html?team=';
+const getTeam = (teamID) => {
+    location.href = href + teamID;
+}

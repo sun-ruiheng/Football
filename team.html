@@ -2,18 +2,101 @@
 <html>
     <head>
         <title>hehe placeholder</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="team.css">
+        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onscroll="changeNav()">
         <header>
 
         </header>
 
-        <div>
-            <button id='button-to-matches'>Matches</button>
-            <button id='button-to-players'>Players</button>
+        <div id='top-half'>
+            <img id='team-photo' src="" alt="">
+            <div id='info-fading-in'>
+                <img id='team-logo' src="" alt="">
+                <h2 id='team-stadium' class='team-info'>Stadium</h2>
+                <h2 id='team-country' class='team-info'>Country</h2>
+                <h2 id='team-address' class='team-info'>Address</h2>
+                <h2 id='team-website' class='team-info'><a target="_blank" href='' id='team-website-tag'>Website</a></h2>
+                <h2 id='team-year' class='team-info'>Year</h2>
+            </div>
+            <h1 id='team-name'>Team Name</h1>
+        </div>
+
+        <div id="players-part">
+            <div id="players">
+                
+            </div>
+            <img src="" alt="" id='team-photo-2'>
+        </div>
+
+        <div id="matches-part">
+            <img src="" alt="" id='team-photo-3'>
+            <div id="matches">
+                
+                <div class="fixture" id='fixture1'>
+                    <div class='fixture-top'>
+                        <div class="logo-and-name">
+                            <img src="https://askthescientists.com/wp-content/uploads/2021/04/AdobeStock_240042551-835x835.jpeg" alt="" class='fixture-home'>
+                            <h3 class="fixture-home-name"></h3>
+                        </div>
+                        <div class='scoreline'>
+                            <h1>2-0</h1>
+                        </div>
+                        <div class="logo-and-name">
+                            <img src="https://askthescientists.com/wp-content/uploads/2021/04/AdobeStock_240042551-835x835.jpeg" alt="" class='fixture-away'>
+                            <h3 class="fixture-away-name"></h3>
+                        </div>
+                    </div>
+                    <div class="arena">
+                        <h2>White Hart Lane</h2>
+                    </div>
+                </div>
+
+
+                <div class="fixture" id='fixture2'>
+                    <div class='fixture-top'>
+                        <div class="logo-and-name">
+                            <img src="" alt="" class='fixture-home'>
+                            <h3 class="fixture-home-name"></h3>
+                        </div>
+                        <div class='scoreline'>
+                            <h2>0-0</h2>
+                        </div>
+                        <div class="logo-and-name">
+                            <img src="" alt="" class='fixture-away'>
+                            <h3 class="fixture-away-name"></h3>
+                        </div>
+                    </div>
+                    <div class="arena">
+                        <h2>White Hart Lane</h2>
+                    </div>
+                </div>
+
+
+                <div class="fixture" id='fixture3'>
+                    <div class='fixture-top'>
+                        <div class="logo-and-name">
+                            <img src="" alt="" class='fixture-home'>
+                            <h3 class="fixture-home-name"></h3>
+                        </div>
+                        <div class='scoreline'>
+                            <h2>0-0</h2>
+                        </div>
+                        <div class="logo-and-name">
+                            <img src="" alt="" class='fixture-away'>
+                            <h3 class="fixture-away-name"></h3>
+                        </div>
+                    </div>
+                    <div class="arena">
+                        <h2>White Hart Lane</h2>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
     </body>
-        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="team.js"></script>
 </html>

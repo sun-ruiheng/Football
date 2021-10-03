@@ -1,0 +1,136 @@
+/* html {
+    padding: 0;
+    margin: 0;
+} */
+
+#team-name {
+    position: fixed;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+#team-photo {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#info-fading-in {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    width: 50%;
+    text-align: center;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 20px;
+}
+
+#team-website {
+    z-index: 1;
+    transition: all 0.2s ease-out 0s
+}
+#team-website-tag {
+    text-decoration: none;
+    color: black;
+}
+#team-website:hover {
+    transform: scale(1.1);
+}
+
+#team-logo {
+    height: 40vh;
+    padding-bottom: 5vh;
+}
+
+
+#players-part {
+    display: flex;
+} 
+
+#players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Gemunu Libre', sans-serif;
+    width: 50%;
+}
+
+.player-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.player-col h3 {
+    padding: 0;
+    margin: 0;
+}
+
+#team-photo-2 {
+    margin: 0;
+    width: 50%;
+}
+
+
+
+
+
+#matches-part {
+    display: flex;
+}
+
+#team-photo-3 {
+    margin: 0;
+    width: 50%;
+}
+#matches {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Roboto Mono', monospace;
+    width: 50%;
+}
+
+.fixture {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fixture-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-and-name {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-and-name img {
+    width: 70%;
+}
+
+.scoreline {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scoreline h1 {
+    margin: 0 auto;
+    font-size: 60px;
+}
+
+
+.arena {
+    margin: 0 auto;
+}
