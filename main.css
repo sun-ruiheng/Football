@@ -1,10 +1,54 @@
+body {
+  margin: 0;
+}
 
-table, th, td {
-    /* width: 100%; */
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+#leagues-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(250, 225, 190, 0.2);
+}
 
-th, td {
-    padding: 10px;
+.league {
+  width: 25%;
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border: black;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.league:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+  background-color: rgba(250, 225, 190, 0.8);
+}
+
+#epl {
+  background-image: url("https://cdn.freelogovectors.net/wp-content/uploads/2020/08/epl-premierleague-logo.png");
+}
+
+#bundesliga {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/1200px-Bundesliga_logo_%282017%29.svg.png");
+}
+
+#laliga {
+  background-image: url("https://cdn.freebiesupply.com/logos/large/2x/lfp-logo-png-transparent.png");
+}
+
+span {
+  margin: 0 auto;
+  padding: 5%;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
 }

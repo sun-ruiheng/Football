@@ -21,6 +21,7 @@ const getStandings = async (league) => {
     let urlToFetch = baseURL + league + '/standings';
     let jsonResponse = await fetchResponse(urlToFetch);
     console.log(jsonResponse); //delete later
+    document.getElementsByTagName('title')[0].innerHTML = jsonResponse.competition.name + ' Standings';
     let standings = jsonResponse.standings[0].table;
     console.log(standings); //delete later
     let tbody = document.getElementById('standings-body');
@@ -29,7 +30,6 @@ const getStandings = async (league) => {
         let row = document.createElement("tr");
         tbody.appendChild(row);
 
-        // adding click listener to each row for when team is clicked, to bring to team info page
         let thisTeamID = standings[i].team.id;
         row.addEventListener('click', function() {
             getTeam(thisTeamID)

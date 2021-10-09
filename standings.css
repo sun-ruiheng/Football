@@ -1,0 +1,24 @@
+html {
+    margin: 0 auto;
+}
+
+.table-section {
+    width: 80%;
+}
+
+table {
+    width: 80%;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+tbody tr {
+    border-bottom: 20px solid rgb(0, 0, 0);
+    transition-duration: 0.2s;
+}
+
+tbody tr:hover {
+    background-color: burlywood;
+    transform: scale(1.1);
+    cursor: pointer;
+}

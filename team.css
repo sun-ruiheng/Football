@@ -63,7 +63,7 @@
 .player-col {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .player-col h3 {
@@ -133,4 +133,11 @@
 
 .arena {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
 }
