@@ -45,6 +45,7 @@
 #team-logo {
     height: 40vh;
     padding-bottom: 5vh;
+    object-fit: scale-down;
 }
 
 
