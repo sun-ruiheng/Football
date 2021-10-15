@@ -42,10 +42,10 @@ let teamPictures = {
         "https://i2-prod.dailystar.co.uk/incoming/article25183587.ece/ALTERNATES/s615b/1_GettyImages-1345506997.jpg"
     ], //Newcastle
     73: [
-        "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/146630511_10158153826698505_3583957671248691053_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=JsqfzcTqBH4AX-hK-n7&_nc_ht=scontent.fsin10-1.fna&oh=c6698f1fd75187de8579c65fff046741&oe=617F1CF1", //Spurs
+        "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/146630511_10158153826698505_3583957671248691053_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=JsqfzcTqBH4AX-hK-n7&_nc_ht=scontent.fsin10-1.fna&oh=c6698f1fd75187de8579c65fff046741&oe=617F1CF1",
         "https://cdn.vox-cdn.com/thumbor/OP8FqHYnTLnYyqWqc-u4Xewb_-U=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22548497/1319644615.jpg",
         "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/p720x720/48425370_10156111179778505_7960977369265602560_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=GNh_7g3YvUoAX9Hja0C&_nc_ht=scontent.fsin10-1.fna&oh=2f2f094e643d092b73243c3301f24569&oe=617FBA40"
-    ],
+    ], //Spurs
     76: [
         "https://wolves-cdn.azureedge.net/media/18061/semedo-united.jpg",
         "https://i2-prod.football.london/incoming/article17622499.ece/ALTERNATES/s1200c/0_GettyImages-1195525837.jpg",
@@ -65,8 +65,23 @@ let teamPictures = {
         "https://www.dailyecho.co.uk/resources/images/11630013/",
         "https://www.dailyecho.co.uk/resources/images/11062297/"
     ], //Southampton
+    563: [
+        "https://www.whufc.com/sites/default/files/inline-images/NobleDesktop.jpg",
+        "https://staticg.sportskeeda.com/editor/2020/08/50f2c-15964880204224.jpg",
+        "https://www.whufc.com/sites/default/files/img/news_gallery/2020-08/CressManU.jpeg"
+    ], //West Ham
 
 
+    1: [
+        "https://fc.de/fileadmin/_processed_/1/7/csm_Spielbericht_BMGKOE_210206_HP_b524ffa06d.jpg",
+        "https://pbs.twimg.com/media/EDEMQ1NXsAAWQ37.jpg",
+        "https://pbs.twimg.com/media/EEw-4ECXYAcy9EV.jpg:large",
+    ], //Cologne
+    2: [
+        "https://totomaster.co/wp-content/uploads/2020/05/1-5.jpg",
+        "https://cdn.vox-cdn.com/thumbor/4S1ZIUfY5Gq4Gr2KiPgaUoNCCWQ=/0x0:3520x5278/1200x0/filters:focal(0x0:3520x5278):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22328335/1303455587.jpg",
+        "https://pbs.twimg.com/media/E8flqs2WEAIkI6k.jpg:large"
+    ], //Hoffenheim
     3: [
         "https://img.bundesliga.com/tachyon/sites/2/2020/03/AS3_8607.jpg?crop=0px,0px,1920px,1080px&fit=1140",
         "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/244177010_1553903928294707_118603708122688583_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=pMfdgcoPQxkAX-I2N8t&_nc_ht=scontent.fsin10-1.fna&oh=eeefe87f893f758dfc086b45c656ee86&oe=618F7D66",
@@ -82,11 +97,21 @@ let teamPictures = {
         "https://img.fcbayern.com/image/upload/t_cms-9x12/f_auto/w_660,h_880,c_fill/cms/public/images/fcbayern-com/homepage/saison-17-18/profis/lewandowski/lewandowski_ima_100318.jpg",
         "https://pbs.twimg.com/media/EVeQRo6WkAATMHs.jpg"
     ], //Bayern
+    9: [
+        "https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(683x205:685x203)/origin-imgresizer.eurosport.com/2020/12/04/2949350-60542968-2560-1440.jpg",
+        "https://bilder.bild.de/fotos-skaliert/startelf-ich-komme-krzysztof-piatek-soll-heute-in-dortmund-gemeinsam-mit-jhon-cordoba-in-herthas-stu-a485bd94c0ff4cb185d93dcab31f5732-75720072/2,w=1986,q=low,c=0.bild.jpg",
+        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d28a6b63-492d-4052-8569-bd253f99893e/d9n5ck5-fcc0e1f8-04e5-43cb-be61-5b18f6a20fd1.jpg/v1/fill/w_1024,h_1821,q_75,strp/hertha_bsc_wallpaper_by_eins8neun2_d9n5ck5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgyMSIsInBhdGgiOiJcL2ZcL2QyOGE2YjYzLTQ5MmQtNDA1Mi04NTY5LWJkMjUzZjk5ODkzZVwvZDluNWNrNS1mY2MwZTFmOC0wNGU1LTQzY2ItYmU2MS01YjE4ZjZhMjBmZDEuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oIhg_X4SsvgFf6WFW-FtheY4-y4bEotw7SkdPi_sfJs"
+    ], //Hertha
     11: [
         "https://www.sportingpedia.com/wp-content/uploads/2020/09/Wolfsburg-vs-Desna-EL.jpg",
         "https://cdn.vox-cdn.com/thumbor/EhMsIu5mpMQ3IRw0hzjl8gDelvQ=/0x0:1705x2557/1200x0/filters:focal(0x0:1705x2557):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22405165/1231833712.jpg",
         "https://pbs.twimg.com/media/En8hChRW8AI35MV.jpg"
     ], //Wolfsburg
+    15: [
+        "https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1469x310:1471x308)/origin-imgresizer.eurosport.com/2021/04/24/3120534-63966408-2560-1440.jpg",
+        "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/230074408_4494375753917437_7054859780838565639_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=BruH32aCjhQAX-_WJLS&_nc_ht=scontent.fsin10-1.fna&oh=8506a6b8f826dc4585583d46466c80ad&oe=61904CA0",
+        "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/226769918_4474940582527621_1454446928296324974_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=cFuKvQf-kxoAX8PWgRU&_nc_ht=scontent.fsin10-1.fna&oh=65965d8292f33467ad93506c0ad0ea80&oe=618E24C9"
+    ], //Mainz
     18: [
         "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F1186858882%2F0x0.jpg",
         "https://www.thesun.co.uk/wp-content/uploads/2021/08/887b5e84-bec3-40a8-b225-bcfdae0d4593-1.jpg",
@@ -99,9 +124,14 @@ let teamPictures = {
     ], //Leipzig
 
 
+    77: [
+        "https://cdn-wp.thesportsrush.com/2019/09/GettyImages-1165378488.jpg",
+        "https://pbs.twimg.com/media/E_CHlbYXIAsHOpm.jpg",
+        "https://i.pinimg.com/originals/a1/7f/3c/a17f3cfb7d2aa4347da431728dc69688.jpg"
+    ], //Athletic
     78: [
         "https://img-estaticos.atleticodemadrid.com/system/file5s/65522/medium2x2/slmNIUttxG_pina.jpg?1598895694",
-        "https://lh3.googleusercontent.com/proxy/zmSOAbrSAtuz9ftNqkLINQ7K9Pip0ftnnJhaoEiuxvzc7c6ULhvtQ-E2EkIlKvtNBrWvFsnigt_QCPZ1lGQBCemIEfQwZqIm4csrPZASxqp029Vi0SI-Dp9zcZfEqhFQaQ",
+        "https://pbs.twimg.com/media/EslfHbbW8AMSDVN.jpg",
         "https://cdn.vox-cdn.com/thumbor/5RUGi9j9vc1Yhq0PTUgzpp412xw=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22853752/1340587572.jpg"
     ], //Atletico
     81: [
@@ -115,6 +145,11 @@ let teamPictures = {
         "https://i.pinimg.com/originals/5b/73/b3/5b73b391b0d6fb27f9e400bc6673465b.jpg",
         "https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/file77v4n2ve6gl14y9jbalh-1086691071-1573987495.jpg"
     ], //RMadrid
+    92: [
+        "https://cdn.realsociedad.eus//Uploads/contenidos/thumbs/a-cronica_945_.jpeg",
+        "https://pbs.twimg.com/media/E9FGbw_WUAY2EJM.jpg",
+        "https://fotos02.noticiasdegipuzkoa.eus/2020/11/25/690x278/januzaj-oyarzabal.jpg"
+    ], //Sociedad
     94: [
         "https://editorial.uefa.com/resources/0233-0e95c54dd418-ce850eb24d7d-1000/villarreal_will_be_celebrating_again_with_victory_over_steaua.jpeg",
         "https://www.coachesvoice.com/wp-content/uploads/2021/05/VillarrealMobile.jpg",
@@ -130,7 +165,7 @@ let teamPictures = {
         "https://editorial.uefa.com//resources/0263-10c6d263f7bd-755654eab22b-1000/format/free1/fc_sevilla_v_fc_krasnodar_group_e_-_uefa_champions_league.jpeg",
         "https://pbs.twimg.com/media/ESjiWXnXYAAunvf.jpg"
     ] //Sevilla
-    }
+    };
 
 
 // assigning JS variables to HTML objects
