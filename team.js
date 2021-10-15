@@ -36,6 +36,11 @@ let teamPictures = {
         "https://i.pinimg.com/originals/f1/8a/85/f18a8526b6e9994527660ad93ac10ab0.jpg",
         "https://i.pinimg.com/originals/88/de/86/88de860ae2fcd29e6c7d09483fbe8da1.jpg"
     ], //ManU
+    67: [
+        "https://e0.365dm.com/21/10/1600x900/skysports-newcastle-st-james-park_5540148.jpg?20211008203855",
+        "https://static.highsnobiety.com/thumbor/kqnIiEbQ_nvOJF_oWwlIpvtGi3g=/1600x2000/static.highsnobiety.com/wp-content/uploads/2021/08/13154429/football-jersey-202122-season-editors-roundtable-05.jpg",
+        "https://i2-prod.dailystar.co.uk/incoming/article25183587.ece/ALTERNATES/s615b/1_GettyImages-1345506997.jpg"
+    ], //Newcastle
     73: [
         "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/146630511_10158153826698505_3583957671248691053_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=JsqfzcTqBH4AX-hK-n7&_nc_ht=scontent.fsin10-1.fna&oh=c6698f1fd75187de8579c65fff046741&oe=617F1CF1", //Spurs
         "https://cdn.vox-cdn.com/thumbor/OP8FqHYnTLnYyqWqc-u4Xewb_-U=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22548497/1319644615.jpg",
@@ -56,10 +61,11 @@ let teamPictures = {
         "https://www.footballfancast.com/wp-content/uploads/2019/10/2019-10-05T153950Z_711738545_RC12DD005960_RTRMADP_3_SOCCER-ENGLAND-LIV-LEI-REPORT.jpg"
     ],//Leicester
     340: [
-        "https://news.cgtn.com/news/2020-11-07/Southampton-go-top-at-Premiere-League-with-2-0-win-over-Newcastle-VdovbS8SAM/img/1e9b0af7efca455dbb526d4053b40904/1e9b0af7efca455dbb526d4053b40904.png",
+        "https://static.standard.co.uk/2021/10/06/08/newFile.jpg?width=968&auto=webp&quality=75&crop=968%3A645%2Csmart",
         "https://www.dailyecho.co.uk/resources/images/11630013/",
         "https://www.dailyecho.co.uk/resources/images/11062297/"
     ], //Southampton
+
 
     3: [
         "https://img.bundesliga.com/tachyon/sites/2/2020/03/AS3_8607.jpg?crop=0px,0px,1920px,1080px&fit=1140",
@@ -76,11 +82,22 @@ let teamPictures = {
         "https://img.fcbayern.com/image/upload/t_cms-9x12/f_auto/w_660,h_880,c_fill/cms/public/images/fcbayern-com/homepage/saison-17-18/profis/lewandowski/lewandowski_ima_100318.jpg",
         "https://pbs.twimg.com/media/EVeQRo6WkAATMHs.jpg"
     ], //Bayern
+    11: [
+        "https://www.sportingpedia.com/wp-content/uploads/2020/09/Wolfsburg-vs-Desna-EL.jpg",
+        "https://cdn.vox-cdn.com/thumbor/EhMsIu5mpMQ3IRw0hzjl8gDelvQ=/0x0:1705x2557/1200x0/filters:focal(0x0:1705x2557):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22405165/1231833712.jpg",
+        "https://pbs.twimg.com/media/En8hChRW8AI35MV.jpg"
+    ], //Wolfsburg
+    18: [
+        "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F1186858882%2F0x0.jpg",
+        "https://www.thesun.co.uk/wp-content/uploads/2021/08/887b5e84-bec3-40a8-b225-bcfdae0d4593-1.jpg",
+        "https://www.rousingthekop.com/static/uploads/4/2021/02/GettyImages-1201870396.jpg"
+    ], //Gladbach
     721: [
         "https://www.getfootballnewsgermany.com/assets/fbl-ger-cup-nuremberg-leipzig-scaled.jpg",
         "https://ronaldo.com/wp-content/uploads/2020/03/GettyImages-1212256428.jpg",
         "https://i.pinimg.com/474x/bf/fa/34/bffa3443a58816a645718b71feb0ebb7.jpg"
     ], //Leipzig
+
 
     78: [
         "https://img-estaticos.atleticodemadrid.com/system/file5s/65522/medium2x2/slmNIUttxG_pina.jpg?1598895694",
@@ -97,7 +114,22 @@ let teamPictures = {
         "https://i1.wp.com/i.eurosport.com/2020/11/03/2928259-60159148-2560-1440.jpg",
         "https://i.pinimg.com/originals/5b/73/b3/5b73b391b0d6fb27f9e400bc6673465b.jpg",
         "https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/file77v4n2ve6gl14y9jbalh-1086691071-1573987495.jpg"
-    ] //RMadrid
+    ], //RMadrid
+    94: [
+        "https://editorial.uefa.com/resources/0233-0e95c54dd418-ce850eb24d7d-1000/villarreal_will_be_celebrating_again_with_victory_over_steaua.jpeg",
+        "https://www.coachesvoice.com/wp-content/uploads/2021/05/VillarrealMobile.jpg",
+        "https://pbs.twimg.com/media/EiByXSVWsAAE7Tn.jpg"
+    ], //Villarreal
+    95: [
+        "https://e0.365dm.com/20/11/2048x1152/skysports-soler-valenica_5166353.jpg",
+        "https://valenciacf.azureedge.net/images/x6qQv1grrc7L05Qd7njqfe9iSI2vLEWKOHBI7yy9SGyWlTm3YKmKf13dbtbS35zz.jpeg",
+        "https://pbs.twimg.com/media/EXab6H4X0AEVHiV.jpg"
+    ], //Valencia
+    559: [
+        "https://i0.wp.com/thesefootballtimes.co/wp-content/uploads/2016/05/52961e17fac74cc68246375d2bf260fe.jpg?fit=1600%2C1067&ssl=1",
+        "https://editorial.uefa.com//resources/0263-10c6d263f7bd-755654eab22b-1000/format/free1/fc_sevilla_v_fc_krasnodar_group_e_-_uefa_champions_league.jpeg",
+        "https://pbs.twimg.com/media/ESjiWXnXYAAunvf.jpg"
+    ] //Sevilla
     }
 
 
