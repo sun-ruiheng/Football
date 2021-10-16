@@ -1,3 +1,46 @@
+
+// assigning JS variables to HTML objects
+const title = document.getElementsByTagName('title');
+// STUFF ON TOP
+const fadeInDiv = document.getElementById('info-fading-in');
+const teamPhoto = document.getElementById('team-photo');
+const teamName = document.getElementById('team-name');
+const teamLogo = document.getElementById('team-logo');
+const teamStadium = document.getElementById('team-stadium');
+const teamCountry = document.getElementById('team-country');
+const teamAddress = document.getElementById('team-address')
+const teamWebsite = document.getElementById('team-website-tag');
+const teamYear = document.getElementById('team-year');
+// PLAYERS
+const teamList = document.getElementById('players-table');
+const teamPhoto2 = document.getElementById("team-photo-2");
+const playersPart = document.getElementById('players-part');
+const players = document.getElementById('players');
+//MATCHES
+const teamPhoto3 = document.getElementById("team-photo-3");
+const matchesPart = document.getElementById('matches-part');
+const matches = document.getElementById('matches');
+const fixture1 = document.getElementById('fixture1');
+const fixture2 = document.getElementById('fixture2');
+const fixture3 = document.getElementById('fixture3');
+const fixtureHomeImages = document.getElementsByClassName('fixture-home');
+const fixtureAwayImages = document.getElementsByClassName('fixture-away');
+const fixtureHomeNames = document.getElementsByClassName('fixture-home-name');
+const fixtureAwayNames = document.getElementsByClassName('fixture-away-name');
+const scorelines = document.getElementsByClassName('scoreline');
+const arenas = document.getElementsByClassName('arena');
+const dates = document.getElementsByClassName('date');
+var leagueID;
+
+
+// ON DOWN SCROLL, OPACITY DROPS DRAMATICALLY, TEAM NAME, LOGO, INFO TAKE OVER IN MIDDLE OF PAGE.
+function changeNav() {
+    var newScroll = document.scrollingElement.scrollTop;
+    let newOpacity = String(100 - newScroll/2.5) + "%";
+    teamPhoto.style.opacity = newOpacity;
+}
+const loadPage = async () => {
+
 const token = '7aa496fb7e9b4a2da942794924e18031';
 const baseURL = 'http://api.football-data.org/v2/teams/';
 const queryString = window.location.search;
@@ -168,38 +211,6 @@ let teamPictures = {
     };
 
 
-// assigning JS variables to HTML objects
-const title = document.getElementsByTagName('title');
-// STUFF ON TOP
-const fadeInDiv = document.getElementById('info-fading-in');
-const teamPhoto = document.getElementById('team-photo');
-const teamName = document.getElementById('team-name');
-const teamLogo = document.getElementById('team-logo');
-const teamStadium = document.getElementById('team-stadium');
-const teamCountry = document.getElementById('team-country');
-const teamAddress = document.getElementById('team-address')
-const teamWebsite = document.getElementById('team-website-tag');
-const teamYear = document.getElementById('team-year');
-// PLAYERS
-const teamList = document.getElementById('players-table');
-const teamPhoto2 = document.getElementById("team-photo-2");
-const playersPart = document.getElementById('players-part');
-const players = document.getElementById('players');
-//MATCHES
-const teamPhoto3 = document.getElementById("team-photo-3");
-const matchesPart = document.getElementById('matches-part');
-const matches = document.getElementById('matches');
-const fixture1 = document.getElementById('fixture1');
-const fixture2 = document.getElementById('fixture2');
-const fixture3 = document.getElementById('fixture3');
-const fixtureHomeImages = document.getElementsByClassName('fixture-home');
-const fixtureAwayImages = document.getElementsByClassName('fixture-away');
-const fixtureHomeNames = document.getElementsByClassName('fixture-home-name');
-const fixtureAwayNames = document.getElementsByClassName('fixture-away-name');
-const scorelines = document.getElementsByClassName('scoreline');
-const arenas = document.getElementsByClassName('arena');
-const dates = document.getElementsByClassName('date');
-var leagueID;
 
 const fetchResponse = async (url) => {
     try {
@@ -378,18 +389,12 @@ const getMatches = async () => {
     //first time encountering status=not yet, plus two before that. so it's either done/ done/ next or done/ in progress/ next.
 }
 
-// ON DOWN SCROLL, OPACITY DROPS DRAMATICALLY, TEAM NAME, LOGO, INFO TAKE OVER IN MIDDLE OF PAGE. MAYBE SIDES STAY AT 100% OPACITY?
-function changeNav() {
-    var newScroll = document.scrollingElement.scrollTop;
-    let newOpacity = String(100 - newScroll/2.5) + "%";
-    teamPhoto.style.opacity = newOpacity;
-}
-// ON DOWN SCROLL, OPACITY DROPS DRAMATICALLY, TEAM NAME, LOGO, INFO TAKE OVER IN MIDDLE OF PAGE. MAYBE SIDES STAY AT 100% OPACITY?
 
 
 
+await getTeamInfo();
+await getMatches();
 
+};
 
-
-getTeamInfo();
-getMatches();
+loadPage();
