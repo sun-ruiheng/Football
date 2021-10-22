@@ -11,5 +11,5 @@ class TestComponentClass extends React.Component {
 }
 ReactDOM.render(
     <TestComponentClass />,
-    document.getElementById('epl')
+    document.getElementById('testingtesting')
 )
