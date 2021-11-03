@@ -85,9 +85,9 @@ let teamPictures = {
         "https://i2-prod.dailystar.co.uk/incoming/article25183587.ece/ALTERNATES/s615b/1_GettyImages-1345506997.jpg"
     ], //Newcastle
     73: [
-        "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/146630511_10158153826698505_3583957671248691053_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=JsqfzcTqBH4AX-hK-n7&_nc_ht=scontent.fsin10-1.fna&oh=c6698f1fd75187de8579c65fff046741&oe=617F1CF1",
+        './images/spursbg.jpg',
         "https://cdn.vox-cdn.com/thumbor/OP8FqHYnTLnYyqWqc-u4Xewb_-U=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22548497/1319644615.jpg",
-        "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/p720x720/48425370_10156111179778505_7960977369265602560_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=GNh_7g3YvUoAX9Hja0C&_nc_ht=scontent.fsin10-1.fna&oh=2f2f094e643d092b73243c3301f24569&oe=617FBA40"
+        "https://pbs.twimg.com/media/FAyHybzXsAYnzHq.jpg"
     ], //Spurs
     76: [
         "https://wolves-cdn.azureedge.net/media/18061/semedo-united.jpg",
