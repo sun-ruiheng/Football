@@ -55,7 +55,8 @@ let teamPictures = {
         "https://i2-prod.football.london/incoming/article19481291.ece/ALTERNATES/s1200c/0_PEA.jpg"
     ], //Arsenal
     61: [
-        "https://news.cgtn.com/news/2021-05-19/Chelsea-beat-Leicester-to-boost-top-four-bid-Brighton-upsets-Man-City-10o8qioV5pC/img/dbc7454f7a0746d68a01dee270ac80dd/dbc7454f7a0746d68a01dee270ac80dd.png",
+        './images/chelsea.gif',
+        // "https://news.cgtn.com/news/2021-05-19/Chelsea-beat-Leicester-to-boost-top-four-bid-Brighton-upsets-Man-City-10o8qioV5pC/img/dbc7454f7a0746d68a01dee270ac80dd/dbc7454f7a0746d68a01dee270ac80dd.png",
         "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/137592622_10159309170042259_8227939711166751824_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=noqXK-T7vBkAX-ICjwx&_nc_ht=scontent.fsin10-1.fna&oh=cc333018759a3421afbaaebab6bc636c&oe=6190DFC1",
         "https://scontent.fsin10-1.fna.fbcdn.net/v/t1.6435-9/74453250_10158805711932259_7375199697777847883_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=OiN5NaF25pIAX8WMZq3&_nc_ht=scontent.fsin10-1.fna&oh=de899615840199e9c51201ae6fc3008b&oe=618F5588"
     ], //Chelsea
@@ -65,7 +66,8 @@ let teamPictures = {
         "https://imgix.bustle.com/uploads/getty/2021/9/2/1ec2c171-1a3a-49f0-adac-e6d1bc41bbc3-getty-1234922520.jpg?w=800&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.4653&fp-y=0.2214"
     ], //Everton
     64: [
-        "https://cdn.vox-cdn.com/thumbor/_18GG01a8YkBwju56Nxvo3OcdHc=/2309x1663:5635x3757/1200x800/filters:focal(2828x1988:3728x2888)/cdn.vox-cdn.com/uploads/chorus_image/image/65479936/1139501072.jpg.0.jpg",
+        'https://c.tenor.com/2NJYWiMVrQAAAAAd/corner-taken-quickly-football.gif',
+        // "https://cdn.vox-cdn.com/thumbor/_18GG01a8YkBwju56Nxvo3OcdHc=/2309x1663:5635x3757/1200x800/filters:focal(2828x1988:3728x2888)/cdn.vox-cdn.com/uploads/chorus_image/image/65479936/1139501072.jpg.0.jpg",
         "https://cdn.extra.ie/wp-content/uploads/2019/04/14182736/Mo-Salah-Chelsea.jpg",
         "https://64.media.tumblr.com/9a9a694da00d246eaaf1d744ba5437ba/tumblr_oihbkk64kV1uvl0iao1_1280.png"
     ], //Liverpool
@@ -85,7 +87,8 @@ let teamPictures = {
         "https://i2-prod.dailystar.co.uk/incoming/article25183587.ece/ALTERNATES/s615b/1_GettyImages-1345506997.jpg"
     ], //Newcastle
     73: [
-        './images/spursbg.jpg',
+        // './images/spursbg.jpg',
+        './images/spurs.gif',
         "https://cdn.vox-cdn.com/thumbor/OP8FqHYnTLnYyqWqc-u4Xewb_-U=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22548497/1319644615.jpg",
         "https://pbs.twimg.com/media/FAyHybzXsAYnzHq.jpg"
     ], //Spurs
@@ -99,7 +102,7 @@ let teamPictures = {
         "https://www.thesun.co.uk/wp-content/uploads/2018/05/nintchdbpict000405536732.jpg"
     ], //Burnley
     338: [
-        "https://resources.lcfc.com/leicesterfc/photo/2021/06/15/5e92a419-0b22-4e17-8976-82d5f77a95ce/775550334-279.jpg",
+        "./images/vardy.gif",
         "https://i.guim.co.uk/img/media/ec76895615546ab508b62b48732b632f40a5c0bc/0_157_4786_2872/master/4786.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1693085d7d1dba3c67366248528d0d81",
         "https://www.footballfancast.com/wp-content/uploads/2019/10/2019-10-05T153950Z_711738545_RC12DD005960_RTRMADP_3_SOCCER-ENGLAND-LIV-LEI-REPORT.jpg"
     ],//Leicester
@@ -131,7 +134,7 @@ let teamPictures = {
         "http://res.heraldm.com/content/image/2014/10/21/20141021001278_0.jpg"
     ], //Bayer
     4: [
-        "https://img.bundesliga.com/tachyon/sites/2/2020/05/haaland-team-celebration-bvb-s04.jpg?crop=285px,0px,1350px,1080px",
+        "https://c.tenor.com/AXXSARIyyhsAAAAC/haaland-erling-haaland.gif",
         "https://pbs.twimg.com/media/EyYMTKIXIAEsDv-.jpg",
         "https://cdn.vox-cdn.com/thumbor/qn1VqOUhMarVHm0IwPzIHLGVZqs=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22846146/1235205487.jpg"
     ], //Dortmund
