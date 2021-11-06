@@ -2,14 +2,25 @@
     padding: 0;
     margin: 0;
 } */
+body {
+    overflow: hidden;
+}
 
-#team-name {
+#top-left-text {
     position: fixed;
-    font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
     top: 0;
     left: 0;
     margin: 20px;
+    
+}
+
+#team-name {
+    font-size: 3rem;
+}
+
+#team-name-below {
+    font-size: 2rem;
 }
 
 #team-photo {
@@ -145,7 +156,7 @@
 
 
 /* LOADING */
-#loader-wrapper {
+#loader-wrapper-team {
     width: 100%;
     height: 100%;
     position: absolute;

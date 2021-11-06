@@ -19,7 +19,6 @@ const fetchResponse = async (url) => {
 
 const fadeOutLoadingPage = () => {
     const loader = document.getElementById('loader-wrapper');
-    loader.style.transition = '0.5s';
     loader.style.display = 'none';
 };
 

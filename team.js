@@ -213,11 +213,6 @@ let teamPictures = {
     ] //Sevilla
     };
 
-const fadeOutLoadingPage = () => {
-    const loader = document.getElementById('loader-wrapper');
-    loader.style.transition = '0.5s';
-    loader.style.display = 'none';
-}
 
 const fetchResponse = async (url) => {
     try {
@@ -237,15 +232,9 @@ const fetchResponse = async (url) => {
 
 const getTeamInfo = async () => {
     const team = await fetchResponse(baseURL + teamID);
-    fadeOutLoadingPage();
     console.log(team);
     leagueID = team.activeCompetitions[0].id;
  
-    if (teamPictures[teamID]) {
-        teamPhoto.src = teamPictures[teamID][0];
-        teamPhoto2.src = teamPictures[teamID][1];
-        teamPhoto3.src = teamPictures[teamID][2];
-    }
 
     title[0].innerHTML = team.name;
     teamName.innerHTML = team.name;
@@ -398,11 +387,26 @@ const getMatches = async () => {
 }
 
 
-
+const fadeOutLoadingPage = () => {
+    const loader = document.getElementById('loader-wrapper-team');
+    loader.style.display = 'none';
+    const subtitleTip = document.getElementById('team-name-below');
+    subtitleTip.style.display = 'none';
+    const entireScreen = document.getElementsByTagName('body')[0];
+    entireScreen.style.overflow = "visible";
+    if (teamPictures[teamID]) {
+        teamPhoto.src = teamPictures[teamID][0];
+        teamPhoto2.src = teamPictures[teamID][1];
+        teamPhoto3.src = teamPictures[teamID][2];
+    }
+}
 
 await getTeamInfo();
 await getMatches();
 
+fadeOutLoadingPage();
 };
+
+
 
 loadPage();
