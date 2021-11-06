@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Standings</title>
-        <link rel="stylesheet" href="standings.css">
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    </head>
-    <body>
-        <header>
-            
-        </header>
 
-        <div class='tables-section'>
-            <table id='league-standings'>
-                <thead>
-                    <tr class='column-headings'>
-                        <td>Rank</td>
-                        <td>Team</td>
-                        <td>Played</td>
-                        <td>Won</td>
-                        <td>Drawn</td>
-                        <td>Lost</td>
-                        <td>Goals For</td>
-                        <td>Goals Against</td>
-                        <td>Goal Difference</td>
-                        <td>Points</td>
-                    </tr>
-                </thead>
-                <tbody id='standings-body'>
-                    <!-- insert dynamically here -->
-                </tbody>
-            </table>
+<head>
+    <title>Standings</title>
+    <link rel="stylesheet" href="standings.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <div id='loader-wrapper'>
+        <div class="lds-dual-ring">
+            <!-- LOADER -->
         </div>
+    </div>
+    <div class='tables-section'>
+        <table id='league-standings'>
+            <thead>
+                <tr class='column-headings'>
+                    <td>Rank</td>
+                    <td>Team</td>
+                    <td>Played</td>
+                    <td>Won</td>
+                    <td>Drawn</td>
+                    <td>Lost</td>
+                    <td>Goals For</td>
+                    <td>Goals Against</td>
+                    <td>Goal Difference</td>
+                    <td>Points</td>
+                </tr>
+            </thead>
+            <tbody id='standings-body'>
+                <!-- insert dynamically here -->
+            </tbody>
+        </table>
+    </div>
 
-    </body>
-        <script type="text/javascript" src="standings.js"></script>
+</body>
+<script type="text/javascript" src="standings.js"></script>
+
 </html>

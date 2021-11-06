@@ -17,9 +17,16 @@ const fetchResponse = async (url) => {
     }
 };
 
+const fadeOutLoadingPage = () => {
+    const loader = document.getElementById('loader-wrapper');
+    loader.style.transition = '0.5s';
+    loader.style.display = 'none';
+};
+
 const getStandings = async (league) => {
     let urlToFetch = baseURL + league + '/standings';
     let jsonResponse = await fetchResponse(urlToFetch);
+    fadeOutLoadingPage();
     console.log(jsonResponse); //delete later
     document.getElementsByTagName('title')[0].innerHTML = jsonResponse.competition.name + ' Standings';
     let standings = jsonResponse.standings[0].table;

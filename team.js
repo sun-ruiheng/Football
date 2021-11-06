@@ -213,7 +213,11 @@ let teamPictures = {
     ] //Sevilla
     };
 
-
+const fadeOutLoadingPage = () => {
+    const loader = document.getElementById('loader-wrapper');
+    loader.style.transition = '0.5s';
+    loader.style.display = 'none';
+}
 
 const fetchResponse = async (url) => {
     try {
@@ -233,6 +237,7 @@ const fetchResponse = async (url) => {
 
 const getTeamInfo = async () => {
     const team = await fetchResponse(baseURL + teamID);
+    fadeOutLoadingPage();
     console.log(team);
     leagueID = team.activeCompetitions[0].id;
  
