@@ -176,7 +176,7 @@ let teamPictures = {
         "https://i.pinimg.com/originals/a1/7f/3c/a17f3cfb7d2aa4347da431728dc69688.jpg"
     ], //Athletic
     78: [
-        "https://img-estaticos.atleticodemadrid.com/system/file5s/65522/medium2x2/slmNIUttxG_pina.jpg?1598895694",
+        "https://media4.giphy.com/media/N06n9vUHOzsX08eSQJ/giphy.gif?cid=790b76113f658abed76b035ffe3bc814bca36714363f0ffa&rid=giphy.gif&ct=g",
         "https://pbs.twimg.com/media/EslfHbbW8AMSDVN.jpg",
         "https://cdn.vox-cdn.com/thumbor/5RUGi9j9vc1Yhq0PTUgzpp412xw=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22853752/1340587572.jpg"
     ], //Atletico
@@ -344,6 +344,9 @@ const getMatches = async () => {
         let dateYear = date.getFullYear();
         let dateHours = date.getHours().toString();
         let dateMinutes = date.getMinutes().toString();
+        if (dateHours === "0") {
+            dateHours = "00";
+        }
         if (dateMinutes === "0") {
             dateMinutes = "00";
         }
