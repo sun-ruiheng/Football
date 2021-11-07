@@ -50,7 +50,7 @@ const teamID = urlParams.get('team');
 // database of team pictures (the large one that takes up half the screen)
 let teamPictures = {
     57: [
-        "https://www.arsenal.com/sites/default/files/styles/large_16x9/public/images/Celebration_2.jpg?itok=pSkm1Zfx",
+        "https://media3.giphy.com/media/2WeODajqiUSylWx5GN/giphy.gif?cid=790b7611eadc4e3e13c6cccafe04fc256df071c501eb17b4&rid=giphy.gif&ct=g",
         "https://staticg.sportskeeda.com/editor/2021/02/58725-16140781656641.jpg",
         "https://i2-prod.football.london/incoming/article19481291.ece/ALTERNATES/s1200c/0_PEA.jpg"
     ], //Arsenal
@@ -72,12 +72,12 @@ let teamPictures = {
         "https://64.media.tumblr.com/9a9a694da00d246eaaf1d744ba5437ba/tumblr_oihbkk64kV1uvl0iao1_1280.png"
     ], //Liverpool
     65: [
-        "https://www.rp-assets.com/images/news/2021/05/11/92452-large.jpeg",
+        "https://i.giphy.com/media/3ohjV6MZrvP2vH1D2w/giphy.gif",
         "https://i2-prod.mirror.co.uk/incoming/article24764597.ece/ALTERNATES/s1200c/0_Premier-League-Tottenham-Hotspur-v-Manchester-City.jpg",
         "https://i2-prod.manchestereveningnews.co.uk/incoming/article19687309.ece/ALTERNATES/s1200c/0_GettyImages-1295276356.jpg"
      ], //ManC
     66: [
-        "https://allballerzone.com/wp-content/uploads/2021/05/rashford-greenwood-manchester-united-2021_fzb7eveoqdhl1u6mdq16yw2i5.jpg",
+        "https://thumbs.gfycat.com/JadedYellowishKingsnake-max-1mb.gif",
         "https://i.pinimg.com/originals/f1/8a/85/f18a8526b6e9994527660ad93ac10ab0.jpg",
         "https://i.pinimg.com/originals/88/de/86/88de860ae2fcd29e6c7d09483fbe8da1.jpg"
     ], //ManU
@@ -181,13 +181,14 @@ let teamPictures = {
         "https://cdn.vox-cdn.com/thumbor/5RUGi9j9vc1Yhq0PTUgzpp412xw=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22853752/1340587572.jpg"
     ], //Atletico
     81: [
-        "https://img.bleacherreport.net/img/slides/photos/004/245/901/0a4b4330e177b08ce4d156a33546b0cb_crop_exact.jpg?w=2975&h=2048&q=85",
+        "https://www.gifcen.com/wp-content/uploads/2021/02/messi-best-free-kick-gif.gif",
+        // "https://img.bleacherreport.net/img/slides/photos/004/245/901/0a4b4330e177b08ce4d156a33546b0cb_crop_exact.jpg?w=2975&h=2048&q=85",
         "https://i.pinimg.com/originals/20/70/73/20707332e0158736ccdec2609672140f.jpg",
         "https://www.rousingthekop.com/static/uploads/4/2021/04/GettyImages-1277030554.jpg"
 
     ], //Barca
     86: [
-        "https://i1.wp.com/i.eurosport.com/2020/11/03/2928259-60159148-2560-1440.jpg",
+        "http://4.bp.blogspot.com/-dT6cG8evdc4/VEEB-D5gB8I/AAAAAAAAFDI/5xofgwDTrtc/s640/ronaldo%2Bgif%2Bfail.gif",
         "https://i.pinimg.com/originals/5b/73/b3/5b73b391b0d6fb27f9e400bc6673465b.jpg",
         "https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/file77v4n2ve6gl14y9jbalh-1086691071-1573987495.jpg"
     ], //RMadrid
@@ -260,8 +261,6 @@ const getTeamInfo = async () => {
     squad.sort(function(a, b) {
         return positions.indexOf(a.position) - positions.indexOf(b.position);
     });
-    console.log('squad:');
-    console.log(squad); //delete
     
     let col1 = document.createElement('div');
     let col2 = document.createElement('div');
@@ -291,18 +290,12 @@ const getTeamInfo = async () => {
     players.appendChild(col2);
     players.appendChild(col3);
     
-//  ALSO EXPLORE FADING IN/OUT OR DRIFTING IN/OUT ON SCROLL, FROM THE SIDES.
-//  ALSO EXPLORE FADING IN/OUT OR DRIFTING IN/OUT ON SCROLL, FROM THE SIDES.
-//  ALSO EXPLORE FADING IN/OUT OR DRIFTING IN/OUT ON SCROLL,FROM THE SIDES.
-//  ALSO EXPLORE FADING IN/OUT OR DRIFTING IN/OUT ON SCROLL FROM THE SIDES.
-
 }
 
 
 const getMatches = async () => {
     const matchesJSON = await fetchResponse(baseURL + teamID + '/matches');
     matchesList = matchesJSON.matches;
-    console.log(matchesList); //DELETE LATER
 
     let listOfStatuses = matchesList.map(function(game) {
         return game.status;
@@ -323,9 +316,8 @@ const getMatches = async () => {
     console.log(threeMatches);
 
     let jsonResponse = await fetchResponse('http://api.football-data.org/v2/competitions/' + leagueID + '/teams');
-    console.log(jsonResponse); //delete later
     let teamsList = jsonResponse.teams;
-    console.log(teamsList); //delete later
+    console.log("teamsList: \n" + teamsList);
     
 
 
@@ -341,11 +333,6 @@ const getMatches = async () => {
         }
     }
 
-
-    // const fixtureHomeImages 
-    // const fixtureHomeNames 
-    // const fixtureAwayNames 
-
     for (let i = 0; i < 3; i++) {
         fixtureHomeNames[i].innerHTML = threeMatches[i].homeTeam.name;
         fixtureAwayNames[i].innerHTML = threeMatches[i].awayTeam.name;
@@ -360,30 +347,9 @@ const getMatches = async () => {
         if (dateMinutes === "0") {
             dateMinutes = "00";
         }
-        console.log(dateHours);
-        console.log(dateMinutes);
         dates[i].innerHTML = dateDay + "/" + dateMonth + "/" + dateYear + "\n" + dateHours + dateMinutes + "H";
-        // arenas[i].innerHTML AH SHIT I THINK THERES NO ARENA IN THREEMATCHES. MAYBE TRY SOME SHIT WITH THE FOR (I) FOR (U) THING ABOVE, LIKE WITH THE CRESTS
     }
 
-//
-//
-//
-//
-
-
-    // console.log(threeMatches);
-
-
-    // let i = 0;
-    // fixtureHomeImages.forEach(function(item) {
-    //     item.src = matchesList.
-    // })
-
-
-    //CONTINUE HERE... CRAFT AN ALGO THAT FINDS THE RECENT 3 MATCHES
-    //CONTINUE HERE... CRAFT AN ALGO THAT FINDS THE RECENT 3 MATCHES
-    //first time encountering status=not yet, plus two before that. so it's either done/ done/ next or done/ in progress/ next.
 }
 
 
