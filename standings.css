@@ -1,6 +1,7 @@
 html {
     margin: 0 auto;
     z-index: 1;
+    background-color: rgba(248, 221, 184, 0.2);
 }
 
 .table-section {

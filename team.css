@@ -4,6 +4,7 @@
 } */
 body {
     overflow: hidden;
+    background-color: rgba(248, 221, 184, 0.2);
 }
 
 #top-left-text {
