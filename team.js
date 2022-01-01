@@ -339,8 +339,10 @@ const getMatches = async () => {
         scorelines[i].innerHTML = threeMatches[i].score.fullTime.homeTeam + " - " + threeMatches[i].score.fullTime.awayTeam;
         let dateISO = threeMatches[i].utcDate;
         let date = new Date(dateISO);
+        console.log("dateISO:");
+        console.log(dateISO);
         let dateDay = date.getDate().toString();
-        let dateMonth = date.getMonth().toString();
+        let dateMonth = (date.getMonth() + 1).toString();
         let dateYear = date.getFullYear();
         let dateHours = date.getHours().toString();
         let dateMinutes = date.getMinutes().toString();
