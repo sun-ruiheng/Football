@@ -349,6 +349,9 @@ const getMatches = async () => {
         if (dateHours === "0") {
             dateHours = "00";
         }
+        if (dateHours.length === 1) {
+            dateHours.shift('0');
+        }
         if (dateMinutes === "0") {
             dateMinutes = "00";
         }
